@@ -8,6 +8,10 @@ class Breakfast {
     return this.options
   }
   random() { 
-    return this.options.sort( () => Math.random() - 0.5 )[0]
+    let meal = this.options.sort( () => Math.random() - 0.5 )[0]
+    return meal
   }
 }
+
+let breakfast = new Breakfast(); 
+console.log(breakfast.random())
