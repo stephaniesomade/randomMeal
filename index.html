@@ -3,36 +3,55 @@
   <head>
     <link href="public/styles.css" rel="stylesheet">
     <title>RMG</title>
+    <style>
+      body { 
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <img src="./public/img/meal_gen.png" alt="logo">
-    <h1>Random Meal Generator</h1>
-    <div>
-      <h2>Breakfast</h2>
-      <button id="breakfastButton">Random</button> 
-      <h4 id="breakfast"></h4>
+    <img src="./public/img/meal_gen_2.png" alt="logo">
+    <h1>Meal Generator</h1>
+    <div class="card">
+      <div class="container center">
+        <h2>Breakfast</h2>
+        <button class="button bouncy" id="breakfastButton">Random</button> 
+        <h4 id="breakfast"></h4>
+      </div>
     </div>
-    <div>
-    <h2>Drinks</h2>
-    <h4>Would you like to choose between Hot, Cold, Fizzy or a Juice drink? </h4>
-      <button id="hot">Hot</button>
-      <button id="cold">Cold</button>
-      <button id="fizzy">Fizzy</button>
-      <button id="juice">Juice</button>
-      <button id="drinksButton">Random</button> 
-      <h4 id="option"></h4>
+    <br>
+    <br>
+    <div class="card">
+      <div class="container">
+        <h2>Dinner</h2>
+        <button class="button bouncy" id="dinnerButton">Random Cuisine Selection</button>
+        <button class="button bouncy" id="English">English</button>
+        <button class="button bouncy" id="Italian">Italian</button>
+        <button class="button bouncy" id="Chinese">Chinese</button>
+        <button class="button bouncy" id="Nigerian">Nigerian</button>
+        <button class="button bouncy" id="Takeout">Takeout</button>
+        <h4 id="dinner"></h4>
+      </div>
     </div>
-    <h2>Dinner</h2>
-    <button id="dinnerButton">Random Cuisine Selection</button>
-    <button id="English">English</button>
-    <button id="Italian">Italian</button>
-    <button id="Chinese">Chinese</button>
-    <button id="Nigerian">Nigerian</button>
-    <button id="Takeout">Takeout</button>
-    <h4 id="dinner"></h4>
-    <h2>Dessert</h2>
-    <button id= "dessert">Random</button>
-    <h4 id="dessertOption"></h4>
+    <br>
+    <div class="card">
+      <div class="container">
+        <h2>Dessert</h2>
+        <button class="button bouncy" id= "dessert">Random</button>
+        <h4 id="dessertOption"></h4>
+      </div>
+    </div>
+    <div class="card">
+      <div class="container">  
+        <h2>Drinks</h2>
+        <button class="button bouncy" id="hot">Hot</button>
+        <button class="button bouncy" id="cold">Cold</button>
+        <button class="button bouncy" id="fizzy">Fizzy</button>
+        <button class="button bouncy" id="juice">Juice</button>
+        <button class="button bouncy" id="drinksButton">Random</button> 
+        <h4 id="option"></h4>
+      </div>
+    </div>
     <script src="src/breakfast.js"></script>
     <script src="src/drinks.js"></script>
     <script src="src/meals.js"></script>
