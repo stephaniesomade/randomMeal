@@ -25,7 +25,16 @@ class Dessert {
       }
     }
   }
+  max(calories) { 
+    let cal = parseInt(calories);
+    let arr = []
+    for (const dessert in this.options) { 
+      if (cal > this.options[dessert]){
+      arr.push(`${dessert}`)
+      }
+    }
+    return arr.join(", ")
 }
-
-let dessert = new Dessert();
-console.log(dessert.calories("jelly"));
+}
+// let dessert = new Dessert();
+// console.log(dessert.max("300"))
