@@ -27,6 +27,32 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector('#drinksButton').addEventListener('click', () => {
   document.querySelector('#option').innerText = drinks.allRandom();
   });
-  
-  
+
+  document.querySelector('#English').addEventListener('click', () => {
+  document.querySelector('#dinner').innerText = meals.englishRandom();
+  });
+
+  document.querySelector('#Italian').addEventListener('click', () => {
+  document.querySelector('#dinner').innerText = meals.italianRandom();
+  });
+
+  document.querySelector('#Chinese').addEventListener('click', () => {
+  document.querySelector('#dinner').innerText = meals.chineseRandom();
+  });
+
+  document.querySelector('#Nigerian').addEventListener('click', () => {
+  document.querySelector('#dinner').innerText = meals.nigerianRandom();
+  });
+
+  document.querySelector('#Takeout').addEventListener('click', () => {
+  document.querySelector('#dinner').innerText = meals.takeOutRandom();
+  });
+        
+  document.querySelector('#dinnerButton').addEventListener('click', () => {
+  document.querySelector('#dinner').innerText = meals.cuisineRandom();
+  });
+
+  document.querySelector('#dessert').addEventListener('click', () => {
+  document.querySelector('#dessertOption').innerText = dessert.random();
+  });
 });

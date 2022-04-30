@@ -27,6 +27,9 @@ class Meals {
   nigerianOptions() { 
     return this.nigerian
   }
+  cuisineRandom() { 
+    return this.cuisine.sort( () => Math.random() - 0.5)[0]
+  }
   italianRandom() { 
     return this.italian.sort( () => Math.random() - 0.5)[0]
   }
